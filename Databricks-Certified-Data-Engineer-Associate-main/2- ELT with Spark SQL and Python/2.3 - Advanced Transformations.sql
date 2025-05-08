@@ -73,6 +73,9 @@ FROM orders
 
 -- MAGIC %md
 -- MAGIC ## Explode Function
+-- MAGIC
+-- MAGIC Creates a row for each explode(col_name) of the array.
+-- MAGIC Reverse f() of aggregation
 
 -- COMMAND ----------
 
@@ -83,6 +86,8 @@ FROM orders
 
 -- MAGIC %md
 -- MAGIC ## Collecting Rows
+-- MAGIC
+-- MAGIC - ``collect_set`` is an aggregation function. It collects unique elements from a group into a set, effectively removing duplicates. 
 
 -- COMMAND ----------
 
@@ -97,6 +102,9 @@ GROUP BY customer_id
 -- MAGIC %md
 -- MAGIC
 -- MAGIC ##Flatten Arrays
+-- MAGIC
+-- MAGIC - ``array_distinct`` is a function that removes duplicate elements from an array.
+-- MAGIC - ``flatten`` is to to flatten nested arrays into a single array.
 
 -- COMMAND ----------
 
@@ -154,6 +162,8 @@ SELECT * FROM orders_updates
 
 -- MAGIC %md
 -- MAGIC ## Reshaping Data with Pivot
+-- MAGIC
+-- MAGIC
 
 -- COMMAND ----------
 

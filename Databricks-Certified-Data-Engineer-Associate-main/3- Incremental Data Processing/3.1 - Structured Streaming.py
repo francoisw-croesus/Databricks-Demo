@@ -37,6 +37,7 @@
 
 # MAGIC %md
 # MAGIC ## Applying Transformations
+# MAGIC The aggregation keeps on running because it is a streaming query
 
 # COMMAND ----------
 

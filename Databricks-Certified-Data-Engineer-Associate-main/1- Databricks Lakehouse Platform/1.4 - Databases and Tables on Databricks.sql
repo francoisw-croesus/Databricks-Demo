@@ -6,6 +6,9 @@
 
 USE CATALOG hive_metastore;
 
+Create schema test_schema;
+USE test_schema;
+
 CREATE TABLE managed_default
   (width INT, length INT, height INT);
 
